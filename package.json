@@ -1,0 +1,27 @@
+{
+  "name": "codex-docs",
+  "version": "1.0.0",
+  "description": "OpenAI Codex 中文学习文档 - 系统学习 Codex 编程助手",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 3000",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "deploy": "npm run build && npx gh-pages -d docs/.vitepress/dist -b gh-pages -u \"liguwe <liguwe@users.noreply.github.com>\""
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "ai",
+    "programming",
+    "documentation",
+    "chinese"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vitepress": "^1.6.3"
+  }
+}
