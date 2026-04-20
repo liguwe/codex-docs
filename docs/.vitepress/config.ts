@@ -8,8 +8,12 @@ export default defineConfig({
   base: '/codex-docs/',
   lastUpdated: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    image: {
+      lazyLoading: true
+    }
   },
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
