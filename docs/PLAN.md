@@ -35,15 +35,15 @@ docs/
 │   ├── rules.md, hooks.md, mcp.md, sdk.md, open-source.md
 │   ├── speed.md, changelog.md, videos.md, auth.md
 │   └── config-*.md (4 个配置文件)
-├── app/ (12 个文件)
+├── app/ (13 个文件)
 ├── cli/ (4 个文件)
 ├── cloud/ (3 个文件)
-├── concepts/ (4 个文件)
-├── enterprise/ (3 个文件)
-├── guides/ (3 个文件)
+├── concepts/ (5 个文件)
+├── enterprise/ (4 个文件)
+├── guides/ (4 个文件)
 ├── ide/ (5 个文件)
-├── integrations/ (3 个文件)
-├── learn/ (1 个文件)
+├── integrations/ (4 个文件)
+├── learn/ (2 个文件)
 ├── plugins/ (2 个文件)
 └── security/ (4 个文件)
 ```
@@ -57,32 +57,40 @@ docs/
 - [x] 编辑链接配置
 - [x] 多语言支持配置
 
+### ✅ 4. GitHub Pages 部署
+
+- [x] 配置 GitHub Actions 工作流
+- [x] 配置自定义域名 (liguwe.site)
+- [x] 添加所有目录的 index.md 首页
+- [x] 网站已上线：https://liguwe.site/codex-docs/
+
 ---
 
 ## 后续计划
 
-### 第一阶段：环境搭建（第 1 天）
+### 第一阶段：环境搭建（已完成）
 
 | 任务 | 状态 | 说明 |
 |------|------|------|
-| 安装依赖 | ⏳ | `npm install` |
-| 启动开发服务器 | ⏳ | `npm run dev` |
-| 验证网站运行 | ⏳ | 访问 localhost:5173 |
-| 配置域名 | ⏳ | 设置 GitHub 仓库名 |
+| 安装依赖 | ✅ | `npm install` |
+| 启动开发服务器 | ✅ | `npm run dev` |
+| 验证网站运行 | ✅ | 访问 localhost:3000 |
+| 配置域名 | ✅ | liguwe.site/codex-docs |
+| GitHub Pages 部署 | ✅ | 自动部署配置完成 |
 
-### 第二阶段：文档翻译（第 2-14 天）
+### 第二阶段：文档翻译（进行中）
 
 **优先级划分**:
 
 **P0 - 核心文档** (必须完成)
-- [ ] quickstart.md - 快速开始
+- [x] quickstart.md - 快速开始
 - [ ] auth.md - 认证配置
 - [ ] config-basic.md - 配置基础
 - [ ] app/ - App 使用指南
 - [ ] cli/ - CLI 使用指南
 
 **P1 - 重要文档** (强烈推荐)
-- [ ] concepts/ - 核心概念
+- [x] concepts/ - 核心概念（索引页已创建）
 - [ ] prompting.md - 提示工程
 - [ ] memories.md - 记忆功能
 - [ ] rules.md / hooks.md - 规则与钩子
@@ -108,11 +116,11 @@ docs/
 - [ ] 添加常见问题解答
 - [ ] 添加最佳实践章节
 
-### 第四阶段：部署上线（第 21 天）
+### 第四阶段：部署上线（已完成）
 
-- [ ] 配置 GitHub Pages
-- [ ] 配置自定义域名（可选）
-- [ ] 设置 CI/CD 自动部署
+- [x] 配置 GitHub Pages
+- [x] 配置自定义域名（liguwe.site）
+- [x] 设置 CI/CD 自动部署
 - [ ] 性能优化
 - [ ] SEO 优化
 
@@ -165,11 +173,19 @@ export default defineConfig({
 
 | 里程碑 | 目标日期 | 交付物 |
 |--------|----------|--------|
-| M1: 框架完成 | Day 1 | 可运行的 VitePress 站点 |
-| M2: P0 文档完成 | Day 5 | 核心文档中文版 |
+| M1: 框架完成 | Day 1 ✅ | 可运行的 VitePress 站点 |
+| M2: P0 文档完成 | Day 5 🔄 | 核心文档中文版 |
 | M3: P1 文档完成 | Day 10 | 完整入门指南 |
 | M4: 全部完成 | Day 20 | 完整中文文档 |
-| M5: 上线部署 | Day 21 | 生产环境网站 |
+| M5: 上线部署 | Day 21 ✅ | 生产环境网站 |
+
+---
+
+## 访问地址
+
+- **生产环境**: https://liguwe.site/codex-docs/
+- **GitHub Pages**: https://liguwe.github.io/codex-docs/
+- **开发环境**: http://localhost:3000/
 
 ---
 
